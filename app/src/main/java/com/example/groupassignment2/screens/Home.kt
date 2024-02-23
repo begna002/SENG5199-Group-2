@@ -10,16 +10,18 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.compose.material3.MaterialTheme
 import com.example.groupassignment2.Drawer
+import com.example.groupassignment2.MainViewModel
 
 
 @Composable
-fun Home(navController: NavHostController) {
+fun Home(navController: NavHostController, viewModel: MainViewModel) {
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
         Column (horizontalAlignment = Alignment.CenterHorizontally){
             Text("Welcome Home!", style = MaterialTheme.typography.headlineSmall)
+            Text(text = viewModel.profileString)
         }
     }
 
