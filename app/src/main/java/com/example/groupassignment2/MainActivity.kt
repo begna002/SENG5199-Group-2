@@ -10,6 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -42,33 +43,33 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MainScreen() {
     val navController = rememberNavController();
-
+    val viewModel = viewModel { MainViewModel() }
     NavHost(
         navController = navController,
         startDestination = NavRoutes.Home.route
     ) {
         composable(NavRoutes.Home.route) {
-            Home(navController = navController)
+            Home(navController = navController, viewModel = viewModel)
         }
 
         composable(NavRoutes.Profile1.route) {
-            Profile1(navController = navController)
+            Profile1(navController = navController, viewModel = viewModel)
         }
 
         composable(NavRoutes.Profile2.route) {
-            Profile2(navController = navController)
+            Profile2(navController = navController, viewModel = viewModel)
         }
 
         composable(NavRoutes.Profile3.route) {
-            Profile3(navController = navController)
+            Profile3(navController = navController, viewModel = viewModel)
         }
 
         composable(NavRoutes.Profile4.route) {
-            Profile4(navController = navController)
+            Profile4(navController = navController, viewModel = viewModel)
         }
 
         composable(NavRoutes.Profile5.route) {
-            Profile5(navController = navController)
+            Profile5(navController = navController, viewModel = viewModel)
         }
     }
 }

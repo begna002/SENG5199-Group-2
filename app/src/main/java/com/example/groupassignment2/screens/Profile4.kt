@@ -10,10 +10,11 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.compose.material3.MaterialTheme
 import com.example.groupassignment2.Drawer
+import com.example.groupassignment2.MainViewModel
 
 
 @Composable
-fun Profile4(navController: NavHostController) {
+fun Profile4(navController: NavHostController, viewModel: MainViewModel) {
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
