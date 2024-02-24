@@ -23,7 +23,7 @@ import androidx.navigation.NavHostController
 import kotlinx.coroutines.launch
 
 @Composable
-fun Drawer(navController: NavHostController) {
+fun Drawer(navController: NavHostController, drawerContent: @Composable () -> Unit) {
     val drawerState = rememberDrawerState(initialValue = DrawerValue.Closed)
     val scope = rememberCoroutineScope()
 
@@ -129,5 +129,7 @@ fun Drawer(navController: NavHostController) {
                 modifier = Modifier.size(32.dp)
             )
         }
+
+        drawerContent()
     }
 }

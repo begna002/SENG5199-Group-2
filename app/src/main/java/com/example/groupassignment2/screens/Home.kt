@@ -7,14 +7,12 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.navigation.NavHostController
 import androidx.compose.material3.MaterialTheme
-import com.example.groupassignment2.Drawer
 import com.example.groupassignment2.MainViewModel
 
 
 @Composable
-fun Home(navController: NavHostController, viewModel: MainViewModel) {
+fun Home(viewModel: MainViewModel) {
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
@@ -24,6 +22,4 @@ fun Home(navController: NavHostController, viewModel: MainViewModel) {
             Text(text = viewModel.profileString)
         }
     }
-
-    Drawer(navController)
 }
