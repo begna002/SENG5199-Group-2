@@ -60,7 +60,7 @@ fun Drawer(navController: NavHostController, drawerContent: @Composable () -> Un
                 )
                 Divider(modifier = Modifier.padding(start = 12.dp, end = 12.dp))
                 NavigationDrawerItem(
-                    label = { Text(text = "Profile 2") },
+                    label = { Text(text = "Bassam") },
                     selected = false,
                     onClick = {
                         scope.launch {
