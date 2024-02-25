@@ -13,7 +13,27 @@ val Pink40 = Color(0xFF7D5260)
 val GreenStart = Color(0xFF11B114)
 val GreenEnd = Color(0xFF52DB59)
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+val PurpleStart = Color(0xFFD24BE9)
+val PurpleEnd = Color(0xFFDF8FEC)
+>>>>>>> Stashed changes
+=======
+val PurpleStart = Color(0xFFD24BE9)
+val PurpleEnd = Color(0xFFDF8FEC)
+>>>>>>> Stashed changes
 
 val BlueStart = Color(0xFF2196F3)
 val BlueEnd = Color(0xFF79C3FD)
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+val OrangeStart = Color(0xFFFF8400)
+val OrangeEnd = Color(0xFFFDA35F)
+>>>>>>> Stashed changes
+=======
+val OrangeStart = Color(0xFFFF8400)
+val OrangeEnd = Color(0xFFFDA35F)
+>>>>>>> Stashed changes

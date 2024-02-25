@@ -7,5 +7,5 @@ data class Card(
     val cardDescription: String,
     val cardName: String,
     val color: Brush,
-//    val globalLinkKey: String,
+//  val globalLinkKey: String,
 )
