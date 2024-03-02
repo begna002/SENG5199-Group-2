@@ -65,7 +65,7 @@ fun Profile1(viewModel: MainViewModel) {
 fun TabScreen() {
     var tabIndex by remember { mutableStateOf(0) }
 
-    val tabs = listOf("Recipe Search", "Saved Recipes", "Explore")
+    val tabs = listOf("Recipe Search", "Saved Recipes")
 
     Column(modifier = Modifier.fillMaxWidth()) {
         TabRow(selectedTabIndex = tabIndex) {
@@ -79,7 +79,6 @@ fun TabScreen() {
         when (tabIndex) {
             0 -> RecipeSearch()
             1 -> SavedRecipes()
-            2 -> ExploreRecipes()
         }
     }
 }
@@ -93,8 +92,4 @@ fun RecipeSearch() {
 @Composable
 fun SavedRecipes() {
     SavedRecipesContent()
-}
-
-@Composable
-fun ExploreRecipes() {
 }
