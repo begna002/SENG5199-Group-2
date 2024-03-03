@@ -9,10 +9,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import com.example.groupassignment2.MainViewModel
+import java.time.Instant
+import java.util.Date
 
 
 @Composable
 fun Profile4(viewModel: MainViewModel) {
+    viewModel.profileString = "You last visited Farshad's page on ${Date.from(Instant.now())}"
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
