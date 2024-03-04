@@ -22,7 +22,6 @@ class RestaurantsViewModel(private val stateHandle: SavedStateHandle) :
         val retrofit: Retrofit = Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create()
             )
-            //       .baseUrl("https://restaurantsdb-508b3-default-rtdb.firebaseio.com/"
             .baseUrl("https://twincitiesrestaurants-266ba-default-rtdb.firebaseio.com/"
             )
             .build()
