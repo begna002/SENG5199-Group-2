@@ -42,7 +42,7 @@ fun RestaurantsScreen() {
     Column(modifier = Modifier.padding(8.dp)) {
         Row {
             Text(
-                text = "14 Recommended Restaurants",
+                text = "Twin Cities' 'Must Visit' Restaurants",
                 fontSize = 30.sp,
                 fontWeight = FontWeight.Bold,
                 textAlign = TextAlign.Center,
@@ -87,8 +87,7 @@ fun RestaurantItem(item: Restaurant,
             RestaurantDetails(
                 item.title,
                 item.description,
-                item.uri,
-                { URlText(url = item.uri, text = "website: ${item.title}" ) },
+                { URlText(url = item.uri, text = "Website: ${item.title}" ) },
                 Modifier.weight(0.70f))
             RestaurantIcon(icon, Modifier.weight(0.15f))
             {onClick(item.id)
@@ -110,7 +109,7 @@ private fun RestaurantIcon(icon: ImageVector,
 }
 
 @Composable
-fun RestaurantDetails(title: String, description: String, uri: String,
+fun RestaurantDetails(title: String, description: String,
                       urlContent: @Composable () -> Unit,
                       modifier: Modifier) {
     Column (modifier = modifier) {
@@ -131,6 +130,8 @@ fun URlText(url: String, text: String) {
     val annotatedString = AnnotatedString.Builder(text). apply {
         addStyle(
             style = SpanStyle(
+                color = Color.Magenta,
+                fontWeight = FontWeight.Medium,
                 textDecoration = TextDecoration.Underline
             ),
             start = 0,
