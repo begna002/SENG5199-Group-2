@@ -20,3 +20,12 @@ Users can externally check Bassam's portfolio.
 
 Note: 
 Editing Events/dialogue, search and rotation functionality are not supported in this version ;) "they are added for a better UI experience."
+
+## Farshad's Screen
+### Summary:
+This screen displays a list of 'Must Visit' restaurants in the twin cities.
+The list is based on Farshad's past visit experience.
+There is a link to each restaurant's url.
+### External libraries and tools
+* Google's Firebase - where I host the restaurant database
+* Retrofit - for making API calls to database
