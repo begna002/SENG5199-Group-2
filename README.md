@@ -9,7 +9,7 @@ somehow stumbled onto my screen. User authentication is currently TODO.
 
 ## Bassam's Screen 
 
-![Card](https://github.com/begna002/SENG5199-Group-2/assets/159471992/e8cf1818-fb86-454d-bc46-0c26a92e80fd)
+![Card](https://github.com/begna002/SENG5199-Group-2/assets/159471992/e8cf1818-fb86-454d-bc46-0c26a92e80fd) <img width="185" alt="Screenshot 2024-03-03 at 9 16 09 PM" src="https://github.com/begna002/SENG5199-Group-2/assets/159471992/f86965b7-c3d5-494c-9374-c35f93629afd">
 
 
 Feature: 
