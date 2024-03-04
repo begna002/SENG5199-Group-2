@@ -29,6 +29,7 @@ class RestaurantsViewModel(private val stateHandle: SavedStateHandle) :
         restInterface = retrofit.create(RestaurantApiService::class.java)
         getRestaurants()
     }
+    // Making async call with the enqueue
     private fun getRestaurants() {
         restaurantsCall = restInterface.getRestaurants()
         restaurantsCall.enqueue(
@@ -86,6 +87,8 @@ class RestaurantsViewModel(private val stateHandle: SavedStateHandle) :
         return this
     }
 
+
+    //Clean up at the end of viewModel lifecycle
     override fun onCleared() {
         super.onCleared()
         restaurantsCall.cancel()

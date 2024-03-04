@@ -9,5 +9,7 @@ data class Restaurant(
     val title: String,
     @SerializedName("r_description")
     val description: String,
+    @SerializedName("uri")
+    val uri: String,
     var isFavorite: Boolean = false
 )
