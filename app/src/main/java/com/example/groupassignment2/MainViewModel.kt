@@ -8,7 +8,7 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
 
 class MainViewModel: ViewModel() {
-    var profileString by mutableStateOf("Default")
+    var profileString by mutableStateOf("Visit one of the profiles in the hamburger menu for a surprise!")
 
     init {
         viewModelScope.launch {
