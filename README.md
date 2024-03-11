@@ -32,3 +32,13 @@ There is a link to each restaurant's url.
 
 ## Rohit's Screen
 Let's play some Tic Tac Toe!
+
+## Moti's Screen
+Have you ever wanted an easy way to lookup and save recipes for your favorite dishes? Then visit
+the Recipe Hub screen!
+
+### Features
+* Recipe search using [Spoonacular API](https://spoonacular.com/food-api)
+  * Each recipe offers dietary information, cook time, ingredients, and instructions
+* Save / remove recipes to your personal journal
+* Utilize the recent search feature to pick up where you left off
