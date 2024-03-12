@@ -34,7 +34,7 @@ import java.util.Date
 
 @Composable
 fun Profile1(viewModel: MainViewModel) {
-    viewModel.profileString = "Moti visited on ${Date.from(Instant.now())}"
+    viewModel.profileString = "You visited Moti's Recipe Hub on ${Date.from(Instant.now())}"
 
     Box(
         modifier = Modifier.fillMaxSize()
